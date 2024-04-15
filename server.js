@@ -11,8 +11,8 @@ const fs = require("fs");
 const port = process.env.PORT;
 const mongodbUrl = process.env.MONGODB_URL_ATLAS;
 
-const TheaterScreen = require("../server/model/threaterScreenModel");
-const Movies = require("../server/model/moviemodel");
+const TheaterScreen = require("./model/threaterScreenModel");
+const Movies = require("./model/moviemodel");
 const Login = require("./model/loginmodel");
 const Event = require("./model/eventmodel");
 const Theater = require("./model/theatermodel");
