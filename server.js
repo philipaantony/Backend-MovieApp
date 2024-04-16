@@ -535,7 +535,8 @@ app.get('/api/activate-user', async (req, res) => {
     try {
         const updatedUser = await Login.findByIdAndUpdate(id, { status: 'blocked' }, { new: true });
         if (updatedUser) {
-            res.redirect('https://661e513abc89800d5d2094de--clever-brigadeiros-b09653.netlify.app/');
+            res.redirect('https://friendly-lamington-8a6251.netlify.app/');
+
         } else {
             res.status(404).json({ error: 'User not found' });
         }
